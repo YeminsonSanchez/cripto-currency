@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cryptocurrency DataTable</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css">
+    
+</head>
+<body>
+
+<table id="cryptoTable" class="display">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Market Cap</th>
+            <th>Price</th>
+            <th>Volume (24h)</th>
+            <th>Circulating Supply</th>
+            <th>Change (24h)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Cryptocurrency data rows will be inserted here by the API -->
+    </tbody>
+</table>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+<script src="./assets/javascript/Javascript.js"></script>
+<script>
+// DataTable initialization with your options
+$(document).ready(function () {
+    $('#cryptoTable').DataTable({
+        // Your DataTables configuration here
+    });
+});
+</script>
+
+</body>
+</html>
